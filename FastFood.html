@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fast Food | Website</title>
+	<script src="https://kit.fontawesome.com/58328cdb59.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body{
+			background-color: WhiteSmoke;
+		}
+
+		::-webkit-scrollbar{
+         width: 12px;
+		}
+
+		::-webkit-scrollbar-thumb{
+			background-color: lightblue;
+			border-radius: 10px;
+		}
+
+		/*########################### HEADER ###############################*/
+
+		header{
+           margin-top: 80px;
+           padding: 30px 0;
+           background-color: white;
+           border-bottom: 2px solid green;
+           box-shadow: 4px 4px 10px 8px #c9d1d0;
+
+		}
+
+		ul{
+           list-style: none;
+		}
+
+		header ul li{
+          display: inline-block;
+          
+		}
+
+		header a{
+			text-decoration: none;
+		}
+
+		header #barra{
+			margin-left: 5em;
+			padding: 0 15rem 0 0;
+		}
+
+		header #barra li{
+			padding-right: 6em;
+		}
+
+		header #barra a{
+			font-size: 13pt;
+			font-weight: 550;
+			color: DimGrey;
+			font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+			padding-bottom: 4px;
+			text-transform: uppercase;
+		}
+
+		header #barra a:hover{
+			border-bottom: 1.5px solid DimGrey;
+		}
+
+		header li .lg{
+          font-size: 23pt;
+          font-weight: 700;
+          color: orange;
+          text-transform: uppercase;
+          margin-left: 6em;
+          font-family: Apple Chancery, cursive;
+		}
+
+		header button{
+			font-size: 10pt;
+			padding: 13px;
+			border: none;
+			background-color: #618a0f;
+			border-radius: 2px;
+			color: white;
+			text-transform: uppercase;
+			margin-bottom: 2px;
+			font-family: Optima, sans-serif;
+			cursor: pointer;
+		}
+
+		header button:hover{
+			background-color: #1E8449;
+		}
+
+/*########################### SECTION1 ##############################*/
+.img1{
+  width: 100%;
+  height: 700px;
+  border: 1px solid black;
+  background-image: url('img/hamburguer.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: change 10s infinite ease-in-out;
+  
+}
+
+section .cont{
+	margin: 10rem 0 0 10rem;
+}
+
+.cont h1{
+  margin-bottom: 0.2em;
+  font-weight: 700;
+  font-size: 38pt;
+  color: orange;
+  letter-spacing: 2px;
+  font-family: arial, sans-serif;
+}
+
+.cont h4{
+	font-weight: 550;
+	font-size: 23pt;
+	color: white;
+    line-height: 1em;
+    margin-left: 0.5em;
+    font-family: arial;
+}
+
+.cont p{
+	color: white;
+	font-size: 18pt;
+	font-weight: 550;
+	margin-left: 0.5em;
+	margin-top: 1.5em;
+}
+
+.img1 .btns{
+	margin: 2.5em 0 0 11em;
+}
+
+.img1 button{
+	width: 213px;
+	font-size: 17pt;
+	padding: 20px;
+	border: none;
+	margin-left: 15px;
+	height: 3em;
+	background-color: orange;
+    border-radius: 2px;
+    color: #145A32;
+    font-family: Optima, sans-serif;
+    cursor: pointer;
+    font-weight: 550;
+}
+
+.img1 button:hover{
+	box-shadow: inset 213px 0 0 0 #145A32;
+	color: white;
+	transition: 1s;
+}
+
+@keyframes change{
+	from{
+       
+	}
+
+	25%{
+		background-image: url("img/kitchen.jpg");
+		transition: 5s;
+	}
+
+	50%{
+      background-image: url("img/pizza2.jpg");
+	  transition: 5s;
+	}
+
+	100%{
+      background-image: url("img/food.jpg");
+	  transition: 20s;
+	}
+}
+
+/*############################### CORPO ###############################*/
+.corpo{
+	display: flex;
+	margin: 2rem 20px 3rem 3rem;
+	flex: 1;
+	flex-wrap: wrap;
+	padding: 0 auto;
+	min-width: 300px;
+	max-width: 1500px;
+}
+
+.item{
+	margin: 1.5rem ;
+	max-width: 450px;
+    background-color: white;
+    box-shadow: 1px 2px 10px 10px #c9d1d0;
+    border-radius: 10px;
+    
+}
+
+.item:hover{
+	transform: translateY(-20px);
+	transition: 0.5s;
+}
+
+.item img{
+	width: 100%;
+	height: 290px;
+}
+
+@media (max-width: 500px){
+	body{
+		
+	}
+
+	.item{
+		width: 100%;
+	}
+
+	.corpo{
+		width: 100%;
+		margin: 0;
+		margin-top: 1em;
+	}
+
+	.produto1{
+		float: none;
+	}
+}
+
+.item h1{
+   margin: 1em 0 0.5em 1em;
+   font-size: 16pt;
+   font-weight: 700;
+   font-family: arial;
+   color: #17202A;
+}
+
+.item p{
+	margin: 0 1.5em 1em 1.5em;
+	line-height: 1.5em;
+	font-weight: 300;
+	font-size: 11.5pt;
+	font-family: arial;
+}
+
+.item button{
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+	border: none;
+	outline: none;
+	font-size: 12.5pt;
+	padding: 15px;
+	color: white;
+	background-color: #d4ac0d;
+	font-weight: 550;
+}
+
+.item button:hover{
+	background-color: #b9770e;
+}
+
+/*################################ Produtos ##############################*/
+.produto1{
+	border: 2px solid red;
+	height: 50em;
+	max-width: 70%;
+	margin-left: 4em;
+	float: left;
+	background-color: #161616;
+}
+
+.produto1 .p_img1, .produto1 .text{
+	width: 50%;
+	height: 100%;
+}
+
+.produto1 .text{
+	border: 1px solid yellow;
+	float: right;
+}
+
+.produto1 .p_img1{
+	border: 1px solid blue;
+	float: left;
+}
+
+.produto1 .p_img1 img{
+   width: 100%;
+   height: 100%;
+}
+
+.produto1 .text h1{
+	text-align: center;
+	font-weight: 700;
+	font-size: 30pt;
+	margin: 50% 2em 1em 2em;
+	color: red;
+	text-transform: uppercase;
+	font-family: arial;
+
+}
+
+.produto1 .text h4{
+	font-size: 15pt;
+	font-weight: 300;
+	margin: 0 3em 0.5em 3em;
+	line-height: 1.3em;
+	color: white;
+}
+
+.produto1 button{
+	margin-left: 3em;
+	padding: 15px 20px;
+	border: none;
+	outline: none;
+	font-size: 15pt;
+	background-color: tomato;
+	font-weight: 550;
+}
+
+.produto1 button:hover{
+	background-color: red;
+}
+
+.produto1 a{
+	text-decoration: none;
+	color: white;
+}
+
+.produto1 h3{
+	font-size: 20pt;
+	color: orange;
+	margin-left: 3em;
+	margin-bottom: 1em;
+	font-weight: 550;
+}
+
+/*########################### CADASTRAR #################################*/
+.cadastrar{
+	float: right;
+	width: 22%;
+	margin-right: 3.5em;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 5px 1px 8px 8px #c9d1d0;
+}
+
+.cadastrar h2{
+	margin-top: 1em;
+	text-align: center;
+	font-size: 21.5pt;
+	font-weight: 700;
+	font-family: arial;
+	color: orange;
+}
+
+.cadastrar input{
+	border: 2px solid orange;
+	display: block;
+	width: 280px;
+	height: 50px;
+	margin: 15px;
+	padding-left: 30px;
+	border-radius: 5px;
+	box-shadow: none;
+	margin: 15px auto;
+	background-color: #ecf0f1;
+}
+
+.cadastrar input:focus{
+   box-shadow: 1px 1px 3px 2px #d68910;
+   border: 2px solid #d68910;
+}
+
+.cadastrar input[type= "submit"]{
+	margin: 15px;
+	width: 100px;
+	height: 40px;
+	font-size: 10.5pt;
+	padding: 10px 15px;
+	font-weight: 650;
+	text-transform: uppercase;
+    background-color: orange;
+    color: white;
+    letter-spacing: 0.2em;
+    border: none;
+    outline: none;
+    text-align: center;
+    margin: 1em auto;
+}
+
+.cadastrar input[type= "submit"]:hover{
+   background-color: #d68910;
+}
+
+.cadastrar p{
+	margin-bottom: 2em;
+	text-align: center;
+	font-size: 13pt;
+	font-weight: 550;
+}
+
+.cadastrar p a{
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.cadastrar p a:hover{
+	margin-bottom: 1px solid purple;
+}
+
+	</style>
+
+</head>
+<body>
+
+ <header>
+	<ul>
+		<li><a href="#" class="lg"><big><i class="fas fa-hamburger" style="margin-right: 5px;"></i>Fast food</big></a></li>
+		<span id="barra">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Sobre nós</a></li>
+		<li><a href="#">Encomenda</a></li>
+	   </span>
+		<li><a><button>iniciar sessão</button></a></li>
+	</ul>
+ </header>
+
+ <section class="img1">
+ 	<div class="cont">
+ 	 <h1><big>Fast food</big></h1>
+ 	 <h4>Está esperando o quê para</h4>
+ 	 <h4>fazer a sua encomenda?</h4>
+ 	 <p>Venha já, temos produtos deliciosos para si</p>
+  </div>
+
+  <div class="btns">
+  	 <button>Encomendar</button> <button>Adiccionar card</button>
+  </div>
+ </section>
+
+
+ <section class="corpo">
+      <section class="item">
+      	<img src="img/empregar.jpg">
+ 	     <div class="cont1">
+ 		      <h1>Venha fazer parte da nossa equipa</h1>
+ 		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+ 		     <button>Read more »</button>
+         </div>
+      </section>
+
+ 	
+     <section class="item">
+ 	   <div class="cont2">
+ 		    <span id= "img"><img src="img/encomenda.jpg"></span>
+ 		    <h1>Faça já a sua encomenda</h1>
+ 		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 		   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 		    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 		   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 		   cillum dolore eu fugiat nulla pariatur.</p>
+
+ 		   <button>Read more »</button>
+ 	     </div>
+      </section>
+
+      <section class="item">
+ 	     <div class="cont3">
+ 		     <span id= "img"><img src="img/livro.jpg"></span>
+ 		     <h1>Livro de reclamações</h1>
+ 		     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 		     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 		     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 		     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 		     cillum dolore eu fugiat nulla pariatur.</p>
+
+ 		     <button>Read more »</button>
+ 	     </div>
+     </section>
+ </section>
+
+ <section>
+ 	 <section class="produto1">
+ 		 <div class="p_img1">
+ 			<img src="img/coca_cola.jpg">
+ 		 </div>
+
+ 		 <div class="text">
+ 			 <h1>Coca Cola</h1>
+ 			 <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 			 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 			 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 			 consequat.</h4> <br>
+ 			 <h3>Preço: $$$ Kz</h3>
+ 			 <button><a href="#">Comprar</a></button>
+ 		 </div>
+     </section>
+
+
+     <section class="cadastrar">
+ 	      <h2>FastFood</h2>
+
+          <form method="post" action="#">
+      	     <i class="fas fa-user" style="position: absolute; margin-top: 18px; margin-left: 40px; color: orange;"></i> <input type="email" name="email" placeholder="Email" required/>
+
+      	     <i class="fas fa-envelope" style="position: absolute; margin-top: 18px; margin-left: 40px; color: orange;"></i> <input type="password" name="pass" placeholder="Palavra passe" required/>
+      	     <input type="submit" value="Entrar">
+      	  </form>
+      	  <p>Esqueceu a sua <a href="#">palavra passe</a></p>
+     </section>
+ </section>
+</body>
+</html>
